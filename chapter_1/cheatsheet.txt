@@ -1,0 +1,54 @@
+ECMAScript: defined usage of JS for browsers
+
+Values: chucks of bits that are information
+    - Pieces of text, numbers, etc.
+
+Primitive Types
+    - Numbers (64-bit)
+        - 13, 9.81, 2.998e8
+        - +-*/%
+        - Special Numbers
+            Infinity, -Infinity
+            NaN (Not a Number): Nonsensical computation (i.e. we don't know)
+    - Strings
+        - Use various quote types
+        - "", '', ``
+        - Template Literals: ``
+            `Half of 100 is ${100 / 2}`
+            - Use ${}
+
+Special operators
+    - typeof
+        typeof 4.5 -> number
+    - unary operators: operate on single value
+    - binary operators: operate on two values
+
+Special operators: Precise true/false
+    === : tests if two values are PRECISELY equal to one another (type, etc.)
+    !== : tests if two values are PRECISELY NOT equal to each other
+    **USE THESE INSTEAD OF != and ==**
+
+Boolean Values: >, >=, <, <=, ==, !=
+
+Logical operators: && (and), || (or), ! (not)
+    - Return values
+        Or: Left if left side is TRUE, Right otherwise
+        And: Left if left side is FALSE, Right otherwise
+
+Ternary operators
+    - If (condition) [THIS] else [THAT]
+    true ? 1 : 2
+
+Empty values:
+    - Denote absence of meaningful value
+    undefined
+    null
+    **These are used interchangeably**
+
+JavaScript has automatic type conversion
+    - For binary operations
+        - "5" + 1 -> 51 // String coercion on 1 (String has + operator)
+        - "5" - 1 -> 4 // Number coercion on "5" (String doesn't have -, but number does)
+    - If both sides are undefined (after type coercion) it CAN return true
+        null == undefined -> true
+
